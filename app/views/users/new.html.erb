@@ -1,0 +1,10 @@
+<%=form_tag("/user/create") do %>
+  <strong>Name</strong>
+  <textarea name = "name"></textarea>
+  <strong>Email</strong>
+  <textarea name = "email"></textarea>
+  <input type="submit" value="create user">
+<%end%>
+
+
+<p><%=link_to("Back","/user")%></p>

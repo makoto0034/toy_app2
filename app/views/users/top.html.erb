@@ -1,0 +1,20 @@
+<h1>Users</h1>
+<strong>Name</strong>
+<strong>Email</strong>
+<p>
+ <% @users.each do |user|%>
+    <table>
+        <tr>
+          <td><%=user.name %></td>
+          <td><%= user.email %></td>
+          <td><%=link_to("show","/user/#{user.id}")%></td>
+          <td><%=link_to("Edit","/user/#{user.id}/edit")%></td>
+          <td><%=link_to("Destroy","/user/#{user.id}/destroy")%><%=user.id%></td>
+        </tr>
+    </table>
+  <%end%>
+</p>
+<ul>
+  <li><%=link_to("New User","/user/new")%></li>
+  <li><%=link_to("New Post","/new") %></li>
+</ul>

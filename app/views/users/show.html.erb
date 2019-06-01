@@ -1,0 +1,14 @@
+<p>Name</p>
+<%=@user.name%>
+<p>Email</p>
+<%=@user.email%>
+<p><%=link_to("Back","/user")%></p>
+<p><%=link_to("Edit","/user/#{@user.id}/edit")%></p>
+
+<p>
+  <strong>posts</strong>
+  <% @posts.each do |post|%>
+    <%=post.content%>
+  <%end%>
+
+</p>

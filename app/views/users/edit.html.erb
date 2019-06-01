@@ -1,0 +1,7 @@
+<%=form_tag("/user/#{@user.id}/update") do%>
+  <p>Name</p>
+  <textarea name = "name"><%=@user.name%></textarea>
+  <p>Email</p>
+  <textarea name = "email"><%=@user.email%></textarea>
+  <input type="submit" value="save">
+<%end%>

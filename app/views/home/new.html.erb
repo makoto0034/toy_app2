@@ -1,0 +1,25 @@
+
+<%= form_tag("/create") do %>
+
+  <strong>User ID</strong>
+
+  <p>
+    <textarea name="user_id"></textarea>
+  </p>
+  <strong>Name</strong>
+  <p>
+    <textarea name ="name"></textarea>
+  </p>
+
+  <strong>Content</strong>
+  <p>
+    <textarea name ="content"></textarea>
+  </p>
+  <p>
+    <input type="submit" value="create posts">
+  </p>
+<%end%>
+
+<p>
+  <%= link_to("Back","/") %>
+</p>

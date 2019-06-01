@@ -1,0 +1,8 @@
+<%= form_tag("/#{@post.id}/update") do %>
+  <strong>Name</strong>
+  <textarea name = "name"><%=@post.name%></textarea>
+
+  <strong>Content</strong>
+  <textarea name = "content"><%=@post.content%></textarea>
+  <input type="submit" value="save" >
+<%end%>

@@ -1,0 +1,21 @@
+<h1>posts</h1>
+<strong>Name</strong>
+<strong>content</strong>
+<p>
+  <% @posts.each do |post| %>
+        <table>
+          <tr>
+            <td><%= post.name %></td>
+            <td><%= post.content %></td>
+            <td><%= post.user_id %></td>
+            <td><%=link_to("Show","/#{post.id}")%></td>
+            <td><%=link_to("Edit","/#{post.id}/edit")%></td>
+            <td><%=link_to("Destroy","/#{post.id}/destroy")%><br></td>
+            <td><%=post.id%></td>
+          </tr>
+        </table>
+  <% end %>
+</p>
+<p>
+  <%= link_to("New Posts","/new") %>
+</p>

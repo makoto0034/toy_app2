@@ -1,0 +1,6 @@
+<p>Name:</p>
+  <%=@post.name %>
+<p>Content:</p>
+  <%=@post.content%>
+<p><%= link_to("Back","/")%></p>
+<p><%= link_to("Edit","/#{@post.id}/edit") %></p>
